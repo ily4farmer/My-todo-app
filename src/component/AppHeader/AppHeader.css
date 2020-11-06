@@ -1,0 +1,16 @@
+.app-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-header__title {
+    width: 60%;
+    margin-top: 30px;
+    background-color: #fdc66e;
+    border-radius: 10px;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    padding: 0.2rem 1.2rem;
+    color: #494a4b;
+}
+

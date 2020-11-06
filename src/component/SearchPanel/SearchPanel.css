@@ -1,0 +1,11 @@
+.search-panel {
+    margin-top: 70px;  
+    border: 0;
+    border-bottom: 3px dashed #fdcb6e;
+    background-color: transparent;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 1.5rem;
+    padding: 10px 15px;
+    width: 70%;
+    color: #494a4b;
+}
