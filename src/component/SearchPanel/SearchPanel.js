@@ -8,10 +8,6 @@ const SearchPanel = ({searchText, value, event}) => {
             className="search-panel"
             onChange={event}
             value={value}/>
-            <button
-                onClick={searchText}>
-                add
-            </button>
         </div>
     );
 };

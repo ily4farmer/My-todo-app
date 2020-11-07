@@ -80,14 +80,23 @@ class App extends Component {
   };
 
   
-  searchText = () => {
-    
+  searchText(list, value) {
+    if (value === 0) {
+      return list
+    } else {
+      return list.filter((el) => { 
+        return el.label.indexOf(value) > -1;
+      });
+    }
+   
   };
       
 
   render () {
     const {listData, value, inputValue} = this.state;
     
+    const filters = this.searchText(listData, inputValue)
+
     return (
       <div className="App">
         <AppHeader/>
@@ -95,9 +104,9 @@ class App extends Component {
             value={value}
             changeValue={this.changeValue}/>
         <AppPanel 
-          data = {listData}
+          data = {filters}
           deleteItem= {this.deleteItem}/>
-        <SearchPanel searchText={this.searchText}
+        <SearchPanel
             event = {this.searchInput}
             value={inputValue}/>
       </div>
