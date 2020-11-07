@@ -1,9 +1,43 @@
-
-
 .app-panel-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.app-panel-item__span {
+    width: 90%;
     text-align: left;   
     margin: 20px 10px;
     font-size: 1.4rem;
     font-weight: 300;
     color: #494a4b;
+    border-bottom: 3px dashed #fdcb6e;
 }
+
+.decoration {
+    text-decoration: line-through;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.app-panel-item__button{
+    width: 45px;
+    height: 45px;
+    border: 3px solid hsl(198, 1%, 29%);
+    border-radius: 8px;
+    padding: 10px 15px;
+    font-family: "Architects Daughter", sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-left: 5px;
+}
+
+.app-panel-item__button:hover {
+    background-color: #fdc66e;
+}
+
+.app-panel-item__button:active {
+    box-shadow: 0 1px 0 hsl(198, 1%, 29%);
+    bottom:-4px;
+  }
